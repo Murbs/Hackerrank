@@ -9,11 +9,11 @@ To solve this I need to return the highest value calculated in earnings, as well
 ```SQL
 SELECT
 
-TOP 1 (Salary * Months), COUNT(employee_id)
+TOP 1 (Salary * Months), COUNT(Employee_ID)
 
 FROM Employee
 
-GROUP by salary, months
+GROUP by Salary, Months
 
 ORDER BY MAX(Salary * Months) DESC
 ```
